@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Setup
+
+npm install @auth0/auth0-spa-js --save
+ng generate service auth
+ng generate component nav-bar
+ng generate component profile
+ng generate guard auth              (*) CanActivate
+ng generate service interceptor
+
+// Install backend server
+npm install express express-jwt jwks-rsa npm-run-all
+
+npm run dev
+
+git remote add origin https://github.com/andwah/login-demo.git

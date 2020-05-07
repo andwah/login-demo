@@ -1,0 +1,14 @@
+<button (click)="pingApi()">Ping API</button>
+<button (click)="securedStuffApi()">securedStuff Api</button>
+
+<pre *ngIf="responseJson">
+<code>{{ responseJson | json }}</code>
+</pre> 
+
+
+<pre *ngIf="secureStuffResponse">
+    <h1>secureStuffResponse</h1>
+    <code>{{ secureStuffResponse | json }}</code>
+    </pre> 
+
+secureStuffResponse
